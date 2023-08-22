@@ -1,0 +1,83 @@
+@page {
+	size: A4 portrait;
+	margin: 20mm;
+}
+
+.wrap-resume {
+	display: flex;
+	justify-content: center;
+}
+
+.resume-1 {
+	width: 210mm;
+	height: 297mm;
+	background-color: white;
+}
+
+.columns {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: row;
+	.left-column {
+		display: flex;
+		flex-direction: column;
+		width: 450px;
+		background-color: #2e4a60;
+		align-items: stretch;
+		.wrap-img {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 290px;
+			height: 250px;
+			background-color: #203141;
+			.circle-img {
+				margin-top: 15px;
+				height: 170px;
+				width: 170px;
+				border-radius: 100%;
+				background-image: url('../../lib/images/mypic.jpg');
+				background-position: 50% 50%;
+				background-size: cover;
+			}
+			.name-wrap {
+				display: flex;
+				flex-direction: row;
+				.first-name {
+					margin-right: 5px;
+				}
+				.first-name,
+				.last-name {
+					font-size: 16pt;
+					color: white;
+				}
+			}
+		}
+		.main-role {
+			color: white;
+		}
+		.info-me {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 100%;
+			p {
+				line-height: 18px;
+			}
+			.top,
+			.bottom {
+				margin: 20px;
+				font-size: 11.5pt;
+				color: white;
+			}
+			.bottom {
+				font-size: 10.5pt;
+			}
+		}
+	}
+	.right-column {
+		width: 100%;
+	}
+}
